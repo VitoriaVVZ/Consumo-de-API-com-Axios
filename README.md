@@ -1,16 +1,68 @@
-# React + Vite
+# Pokémon React: Terceira Geração - Hoenn
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma Pokédex dedicada aos Pokémons da 3ª Região (Hoenn), desenvolvida com React e Vite, consumindo dados em tempo real da **PokéAPI** através do **Axios**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Sobre o Projeto
 
-## React Compiler
+Este projeto foi criado para praticar o consumo de APIs REST em aplicações React. A interface exibe cards individuais para os Pokémon de Hoenn contendo:
+- Número na Pokédex (ex: `#252`)
+- Tipo principal com badge estilizada (ex: `GRASS`)
+- Imagem oficial do Pokémon
+- Nome
+- Altura (em metros) e Peso (em quilogramas)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Tecnologias Utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **[React](https://react.dev/)** – Biblioteca para construção da interface de usuário
+- **[Vite](https://vitejs.dev/)** – Ferramenta de build e servidor de desenvolvimento rápido
+- **[Axios](https://axios-http.com/)** – Cliente HTTP baseado em Promises para realizar as requisições à API
+- **[PokéAPI](https://pokeapi.co/)** – API pública utilizada como fonte de dados dos Pokémon
+- **CSS3** – Estilização modularizada por componentes
+
+---
+
+## Estrutura de Pastas
+
+```text
+Consumo-de-API-com-Axios/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   └── PokemonCard/
+│   │       ├── index.jsx
+│   │       └── styles.css
+│   ├── services/
+│   │   └── api.js
+│   ├── App.css
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── eslint.config.js
+├── index.html
+├── package.json
+└── vite.config.js
+```
+
+---
+
+### Passo a passo
+
+1. **Clone o repositório:**
+   ```bash
+   git clone [https://github.com/VitoriaVVZ/Consumo-de-API-com-Axios.git](https://github.com/VitoriaVVZ/Consumo-de-API-com-Axios.git)
+   ```
+
+2. **Acesse a pasta do projeto:**
+   ```bash
+   cd Consumo-de-API-com-Axios
+   ```
+
+3. **Instale as dependências:**
+   ```bash
+   npm install
+
